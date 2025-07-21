@@ -105,7 +105,7 @@ def save_summary(summary: Dict, out_path: Path):
 
 def apply_critic_feedback(summary: Dict, file_info: Dict[str, Dict[str, List[str]]]) -> None:
     """Use the critic agent to find missing functions and re-include their files."""
-    from critic_agent import review_summary_data
+    from repomind.critic_agent import review_summary_data
 
     issues = review_summary_data(summary)
     if not issues:
