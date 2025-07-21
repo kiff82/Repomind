@@ -11,7 +11,8 @@
 - Saves the gathered information to a JSON file (defaults to `repomind_summary.json`).
 - Depth-aware pruning keeps small but heavily used modules.
 - If a `prompt_context.txt` file exists in the target repo, its contents are included in the summary.
-- A `critic_agent.py` helper can review the summary for potentially missing files.
+- A `repomind/critic_agent.py` helper can review the summary for potentially missing files.
+- A `repomind/docstring_enhancer.py` utility reports missing docstrings and sketches future doc injection features.
 - Summaries are stored in `repomind_memory.json` with old entries compressed.
 
 ## Usage
