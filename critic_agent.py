@@ -1,10 +1,9 @@
 import json
 from pathlib import Path
-from typing import Dict
+from typing import Dict, List
 
 
-def review_summary(summary_path: Path) -> None:
-    data: Dict = json.loads(summary_path.read_text(encoding="utf-8"))
+def review_summary_data(data: Dict) -> List[str]:
 
     call_counts = data.get("call_counts", {})
     kept = data.get("kept", {})
@@ -27,6 +26,13 @@ def review_summary(summary_path: Path) -> None:
                 break
         if not found and count >= 1:
             issues.append(f"Function '{func}' is called {count} times but its definition was not kept.")
+
+    return issues
+
+
+def review_summary(summary_path: Path) -> None:
+    data: Dict = json.loads(summary_path.read_text(encoding="utf-8"))
+    issues = review_summary_data(data)
 
     if not issues:
         print("No obvious issues detected by critic agent.")
