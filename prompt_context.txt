@@ -1,1 +1,300 @@
-# This file can contain additional instructions or context for follow-up agents.
+{
+  "kept": {
+    "fastapi/pdm_build.py": {
+      "functions": [
+        "pdm_build_initialize"
+      ],
+      "calls": [
+        "getenv",
+        "get",
+        "items"
+      ],
+      "num_functions": 1,
+      "num_calls": 3,
+      "total_call_count": 0
+    },
+    "fastapi/tests/main.py": {
+      "functions": [
+        "non_operation",
+        "non_decorated_route",
+        "get_text",
+        "get_id",
+        "get_str_id",
+        "get_int_id",
+        "get_float_id",
+        "get_bool_id",
+        "get_path_param_id",
+        "get_path_param_min_length",
+        "get_path_param_max_length",
+        "get_path_param_min_max_length",
+        "get_path_param_gt",
+        "get_path_param_gt0",
+        "get_path_param_ge",
+        "get_path_param_lt",
+        "get_path_param_lt0",
+        "get_path_param_le",
+        "get_path_param_lt_gt",
+        "get_path_param_le_ge",
+        "get_path_param_lt_int",
+        "get_path_param_gt_int",
+        "get_path_param_le_int",
+        "get_path_param_ge_int",
+        "get_path_param_lt_gt_int",
+        "get_path_param_le_ge_int",
+        "get_query",
+        "get_query_optional",
+        "get_query_type",
+        "get_query_type_optional",
+        "get_query_type_int_default",
+        "get_query_param",
+        "get_query_param_required",
+        "get_query_param_required_type",
+        "get_enum_status_code",
+        "get_query_type_frozenset",
+        "get_query_list",
+        "get_query_list_default"
+      ],
+      "calls": [
+        "FastAPI",
+        "api_route",
+        "add_api_route",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "Path",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "get",
+        "Query",
+        "get",
+        "Query",
+        "get",
+        "Query",
+        "get",
+        "get",
+        "Query",
+        "join",
+        "map",
+        "sorted",
+        "get",
+        "Query",
+        "get",
+        "Query",
+        "get"
+      ],
+      "num_functions": 38,
+      "num_calls": 66,
+      "total_call_count": 0
+    },
+    "fastapi/tests/utils.py": {
+      "functions": [
+        "pydantic_snapshot"
+      ],
+      "calls": [
+        "skipif",
+        "skipif",
+        "skipif",
+        "skipif"
+      ],
+      "num_functions": 1,
+      "num_calls": 4,
+      "total_call_count": 0
+    },
+    "fastapi/tests/test_validate_response_recursive/app.py": {
+      "functions": [
+        "get_recursive",
+        "get_recursive_submodel"
+      ],
+      "calls": [
+        "FastAPI",
+        "model_rebuild",
+        "model_rebuild",
+        "model_rebuild",
+        "update_forward_refs",
+        "update_forward_refs",
+        "get",
+        "get"
+      ],
+      "num_functions": 2,
+      "num_calls": 8,
+      "total_call_count": 0
+    },
+    "fastapi/tests/test_modules_same_name_body/app/b.py": {
+      "functions": [
+        "compute"
+      ],
+      "calls": [
+        "APIRouter",
+        "Body",
+        "Body",
+        "post"
+      ],
+      "num_functions": 1,
+      "num_calls": 4,
+      "total_call_count": 0
+    },
+    "fastapi/tests/test_modules_same_name_body/app/a.py": {
+      "functions": [
+        "compute"
+      ],
+      "calls": [
+        "APIRouter",
+        "Body",
+        "Body",
+        "post"
+      ],
+      "num_functions": 1,
+      "num_calls": 4,
+      "total_call_count": 0
+    },
+    "fastapi/tests/test_filter_pydantic_sub_model/app_pv1.py": {
+      "functions": [
+        "lower_username"
+      ],
+      "calls": [
+        "FastAPI",
+        "endswith",
+        "ValueError",
+        "validator",
+        "ModelC",
+        "Depends",
+        "get"
+      ],
+      "num_functions": 1,
+      "num_calls": 7,
+      "total_call_count": 0
+    },
+    "fastapi/fastapi/cli.py": {
+      "functions": [
+        "main"
+      ],
+      "calls": [
+        "print",
+        "RuntimeError",
+        "cli_main"
+      ],
+      "num_functions": 1,
+      "num_calls": 3,
+      "total_call_count": 7
+    },
+    "fastapi/fastapi/background.py": {
+      "functions": [
+        "add_task"
+      ],
+      "calls": [
+        "ParamSpec",
+        "Doc",
+        "add_task",
+        "super"
+      ],
+      "num_functions": 1,
+      "num_calls": 4,
+      "total_call_count": 12
+    },
+    "fastapi/fastapi/params.py": {
+      "functions": [
+        "__init__",
+        "__repr__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__repr__",
+        "__init__",
+        "__init__",
+        "__init__",
+        "__repr__",
+        "__init__"
+      ],
+      "calls": [
+        "deprecated",
+        "deprecated",
+        "warn",
+        "dict",
+        "warn",
+        "update",
+        "update",
+        "items",
+        "__init__",
+        "super",
+        "deprecated",
+        "deprecated",
+        "__init__",
+        "super",
+        "deprecated",
+        "deprecated",
+        "__init__",
+        "super",
+        "deprecated",
+        "deprecated",
+        "__init__",
+        "super",
+        "deprecated",
+        "deprecated",
+        "__init__",
+        "super",
+        "deprecated",
+        "deprecated",
+        "warn",
+        "dict",
+        "warn",
+        "update",
+        "update",
+        "items",
+        "__init__",
+        "super",
+        "deprecated",
+        "deprecated",
+        "__init__",
+        "super",
+        "deprecated",
+        "deprecated",
+        "__init__",
+        "super",
+        "getattr",
+        "type",
+        "__init__",
+        "super"
+      ],
+      "num_functions": 13,
